@@ -10,6 +10,9 @@ public class SemanaDos {
   double radio = 2
   double longitud = 2 * Math.PI * radio;
   double area = Math.PI * Math.pow(radio,2);
+  // imprimir resultado
+    System.out.println(longitud);
+    System.out.println(area);
     
     
   }
