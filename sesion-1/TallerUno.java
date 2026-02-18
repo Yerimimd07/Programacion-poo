@@ -1,4 +1,4 @@
-public class SemanaDos {
+public class TallerUno {
   public static void main(String args[]) {
 
     //2,10 Calcular y visualizar la longitud de la circunferencia y el área de un circulo de radio dado 
@@ -7,7 +7,6 @@ public class SemanaDos {
     *Longitud = 2⋅π⋅r
     *Area = π⋅r2
     */
-  double radio = 2
   double longitud = 2 * Math.PI * radio;
   double area = Math.PI * Math.pow(radio,2);
   // imprimir resultado
