@@ -1,6 +1,6 @@
 public class Puntos3P130 {
     public static void main(String[] args) {
-        double a = 2, b = 5, c = 3, d = 6, x = 1, y = 7, z = 3, res34, res35, res36;
+        double a = 2, b = 5, c = 3, d = 6, x = 1, y = 7, z = 3, res34, res35;
         /*
          * 3.4 Evaluar la siguiente expresión para A = 2 y B = 5:
          * 3 * A - 4 * B / A ^ 2
@@ -14,6 +14,36 @@ public class Puntos3P130 {
          */
         res35 = 4 / 2 * 3 / 6 + 6 / 2 / 1 / Math.pow(5, 2) / 4 * 2;
         System.out.println("El resultado del punto 3.5 es: " + res35);
+
+        /*
+         * Escribir las siguientes expresiones algebraicas como expresiones
+         * algorítmicas:
+         */
+        double res36a, res36b, res36c, res36d, res36e, res36f, res36g, res36h, res36i, res36j, res36k;
+
+        // a) √b2-4ac
+        res36a = Math.sqrt((Math.pow(b, 2)) - 4 * a * c);
+        System.out.println("El resultado del punto 3.6 a) es: " + res36a);
+
+        // b) x^2+ y^2 /z^2
+        res36b = (Math.pow(x, 2) + Math.pow(y, 2)) / Math.pow(z, 2);
+        System.out.println("El resultado del punto 3.6 b) es: " + res36b);
+
+        // c) 3x + 2y / 2z
+        res36c = (3 * x + 2 * y) / 2 * z;
+        System.out.println("El resultado del punto 3.6 c) es: " + res36c);
+
+        // d) a + b /c – d
+        res36d = (a + b) / (c - d);
+        System.out.println("El resultado del punto 3.6 d) es: " + res36d);
+
+        // e) 4x^2 – 2x + 7
+        res36e = 4 * Math.pow(x, 2) - 2 * x + 7;
+        System.out.println("El resultado del punto 3.6 e) es: " + res36e);
+
+        //f) (x + y/ x) – (3x/5)
+        res36f = ((x + y) / x) - (3*x/5);
+        System.out.println("El resultado del punto 3.6 f) es: " + res36f);
 
     }
 }
