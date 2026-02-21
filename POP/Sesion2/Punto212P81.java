@@ -17,7 +17,8 @@ public class Punto212P81 {
 
         Salario = tarifaHora * NumeroDeHoras * 5;
 
-        System.out.println("El salario semanal es: "+ Salario);
+        System.out.println("El salario semanal es: " + Salario);
+
 
         sc.close();
 
