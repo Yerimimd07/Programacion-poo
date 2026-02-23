@@ -19,7 +19,7 @@ public class Puntos3P130 {
          * Escribir las siguientes expresiones algebraicas como expresiones
          * algorítmicas:
          */
-        double res36a, res36b, res36c, res36d, res36e, res36f, res36g, res36h, res36i, res36j, res36k;
+        double res36a, res36b, res36c, res36d, res36e, res36f, res36g, res36h, res36i, res36j, res36k, res36l;
 
         // a) √b2-4ac
         res36a = Math.sqrt((Math.pow(b, 2)) - 4 * a * c);
@@ -41,9 +41,31 @@ public class Puntos3P130 {
         res36e = 4 * Math.pow(x, 2) - 2 * x + 7;
         System.out.println("El resultado del punto 3.6 e) es: " + res36e);
 
-        //f) (x + y/ x) – (3x/5)
-        res36f = ((x + y) / x) - (3*x/5);
+        // f) (x + y/ x) – (3x/5)
+        res36f = ((x + y) / x) - (3 * x / 5);
         System.out.println("El resultado del punto 3.6 f) es: " + res36f);
 
+        // g) a/bc
+        res36g = a / b * c;
+        System.out.println("El resultado del punto 3.6 g) es: " + res36g);
+
+        // h) xyz
+        res36h = x * y * z;
+        System.out.println("El resultado del punto 3.6 h) es: " + res36h);
+
+        // variables para los puntos i, j ,k ,l
+        double x1 = 1, x2 = 3, y1 = 4, y2 = 6, radio = 6;
+
+        // i) (y2 – y1) / (x2 – x1)
+        res36i = (y2 - y1) / (x2 - x1);
+        System.out.println("El resultado del punto 3.6 i) es: " + res36i);
+
+        // j) 2πr
+        res36j = 2 * Math.PI * radio;
+        System.out.println("El resultado del punto 3.6 j) es: " + res36j);
+
+        //k) (4/3)πr3
+        res36k = (4/3) * Math.PI * radio * 3;
+        System.out.println("El resultado del punto 3.6 k) es: " + res36k);El resultado del punto 3.6 k)
     }
 }
