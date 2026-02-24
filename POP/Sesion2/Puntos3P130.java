@@ -66,6 +66,10 @@ public class Puntos3P130 {
 
         //k) (4/3)πr3
         res36k = (4/3) * Math.PI * radio * 3;
-        System.out.println("El resultado del punto 3.6 k) es: " + res36k);El resultado del punto 3.6 k)
+        System.out.println("El resultado del punto 3.6 k) es: " + res36k);
+
+        //l) (x2 – x1)^2 + (y2 – y1)^2
+        res36l = Math.pow((x2-x1), 2) + Math.pow((y2 - y1),2);
+        System.out.println("El resultado del punto 3.6 l) es: " + res36l);
     }
 }
