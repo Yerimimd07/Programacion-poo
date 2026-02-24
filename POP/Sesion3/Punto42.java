@@ -24,6 +24,10 @@ public class Punto42 {
          * precio total = (distancia * 2.5) – 30/100 * (precio total).
          */
 
+        if (distanciakm > 800 && diasestadia > 7) {
+            preciototal = preciototal - (preciototal * 0.30);
+        }
+
         
 
         sc.close();
