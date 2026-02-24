@@ -26,9 +26,10 @@ public class Punto42 {
 
         if (distanciakm > 800 && diasestadia > 7) {
             preciototal = preciototal - (preciototal * 0.30);
+
         }
 
-        
+        System.out.println("El precio total del viaje es: " + preciototal);
 
         sc.close();
     }
