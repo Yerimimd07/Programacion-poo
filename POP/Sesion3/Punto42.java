@@ -6,7 +6,7 @@ public class Punto42 {
         // variables siempre en minisculas
         double distanciakm, preciototal;
         int diasestadia;
-        final double precioKM = 2.5; // se usa final porque el pecio no cambia
+        //final double precioKM = 2.5; // se usa final porque el pecio no cambia
 
         Scanner sc = new Scanner(System.in);
 
