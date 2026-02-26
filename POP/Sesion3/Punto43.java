@@ -1,47 +1,47 @@
-
 import java.util.Scanner;
 
 public class Punto43 {
+
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
-        /*
-         * Los empleados de una fábrica trabajan en dos turnos: diurno y nocturno.
-         * Se desea calcular el jornal diario de acuerdo con los siguientes puntos:
-         * 1. La tarifa de las horas diurnas es de 5 euros.
-         * 2. La tarifa de las horas nocturnas es de 8 euros
-         * 3. En caso de ser domingo, la tarifa se incrementará en 2 euros el turno
-         * diurno y
-         * 3 euros el turno nocturno
-         */
 
-        int HoraT;
-        double jornada = 0;
-        String Diasemana, Turno;
+        // Variables
+        String dia, turno;
+        double horasTrabajadas, jornal;
 
-        System.out.println("Ingrese el numero de horas trabajadas: ");
-        HoraT = sc.nextInt();
-        System.out.println("Ingrese el dia de la semana: ");
-        Diasemana = sc.next();
-        System.out.println("Ingrese el turno (diurno o nocturno): ");
-        Turno = sc.next();
+        // Entrada de datos
+        System.out.print("Ingrese el número de horas trabajadas: ");
+        horasTrabajadas = sc.nextDouble();
+        sc.nextLine(); // Limpiar buffer
 
-        // condicional
-        if (!Diasemana.equalsIgnoreCase("domingo")
-                && Turno.equalsIgnoreCase("diurno")) {
+        System.out.print("Ingrese el día de la semana: ");
+        dia = sc.nextLine();
 
-            jornada = 5 * HoraT;
+        System.out.print("Ingrese el turno (diurno/nocturno): ");
+        turno = sc.nextLine();
 
-        } else if (Diasemana.equalsIgnoreCase("domingo")
-                && Turno.equalsIgnoreCase("diurno")) {
+        // Lógica de cálculo
+        if (!dia.equalsIgnoreCase("domingo")) {
 
-            jornada = (5 + 2) * HoraT;
+            if (turno.equalsIgnoreCase("diurno")) {
+                jornal = 5 * horasTrabajadas;
+            } else {
+                jornal = 8 * horasTrabajadas;
+            }
 
+        } else { // Si es domingo
+
+            if (turno.equalsIgnoreCase("diurno")) {
+                jornal = 7 * horasTrabajadas; // 5 + 2
+            } else {
+                jornal = 11 * horasTrabajadas; // 8 + 3
+            }
         }
 
-        System.out.println("La tarifa de pago es: " + jornada + " euros");
+        // Salida
+        System.out.println("El jornal diario es: " + jornal + " euros");
 
         sc.close();
     }
-
 }
