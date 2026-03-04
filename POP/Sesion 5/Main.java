@@ -4,7 +4,7 @@ public class Main {
         Celular miTelefono = new Celular();
 
         miTelefono.marca = "Samsung";
-        miTelefono.llamar(123);
+        miTelefono.llamar("3175043482");
         
     }
     
