@@ -7,7 +7,7 @@ public class Libro {
 
     // Crea un constructor que reciba los 3 parametros para inicializar el objeto.
 
-    public Libro(String autor, String titulo, int paginas) {
+    public Libro(String titulo, String autor, int paginas) {
         this.titulo = titulo;
         this.autor = autor;
         this.paginas = paginas;
