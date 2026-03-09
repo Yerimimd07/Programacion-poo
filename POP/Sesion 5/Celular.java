@@ -16,7 +16,7 @@ public class Celular {
 
 
     public void llamar(String numero){
-        System.out.println("Lamar al " + numero + "...");
+        System.out.println("Lamar al " + numero + "..." + "La bateria esta en " + bateria);
         this.bateria -= 5;
     }
     
