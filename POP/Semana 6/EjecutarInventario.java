@@ -12,6 +12,10 @@ public class EjecutarInventario {
         objp1.reducirStock(8);
         System.out.println(objp1);
 
+        //calcular inventario
+        double total = objp1.calcularValorInventario();
+        //Ejemplo 1 de como mostrar el objp1
+        System.out.println("El precion total es:" + total);
 
 
     }
