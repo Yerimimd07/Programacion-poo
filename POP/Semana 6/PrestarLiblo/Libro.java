@@ -55,7 +55,7 @@ public class Libro {
         System.out.println("Autor: " + autor);
         System.out.println("ISBN: " + isbn);
         System.out.println("Número de páginas: " + numeropaginas);
-        System.out.println("Disponible: " + disponible);
+        System.out.println("Disponible: " + (disponible ? "Sí" : "No"));
     }
 
 }
