@@ -17,7 +17,6 @@ public class EjecutarInventario {
         //Ejemplo 1 de como mostrar el objp1
         System.out.println("El precion total es:" + total);
 
-
     }
 
 }
