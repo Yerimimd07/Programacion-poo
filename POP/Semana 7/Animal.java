@@ -32,6 +32,8 @@ public class Animal {
         System.out.println(nombre + " hace un sonido genérico.");
     }
 
+
+    @Override
     public String toString() {
         return "Animal[ nombre=" + nombre + ", Edad=" + edad + "]";
     }

@@ -1,38 +1,32 @@
-public class Animal {
+public class Perro extends Animal {
     
-    private String nombre;
-    private int edad;
+    private String raza;
 
-    public Animal(String nombre, int edad) {
-        this.nombre = nombre;
-        this.edad = edad;
+    public Perro(String nombre, int edad, String raza) {
+        super(nombre, edad);
+        this.raza = raza;
     }
 
-    public String getNombre() { 
-        return nombre;
+    public String getRaza() {
+        return raza;
     }
 
-    public int getEdad() {
-        return edad;
+    public void setRaza(String raza) {
+        this.raza = raza;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
-    public void setEdad(int edad) {
-        this.edad = edad;
-    }
-
-    public void comer() {
-        System.out.println(nombre + " está comiendo.");
-    }
-
+    @Override
     public void hacerSonido() {
-        System.out.println(nombre + " hace un sonido genérico.");
+        System.out.println(getNombre() + " dice: ¡Guau!");
     }
 
-    public String toString() {
-        return "Animal[ nombre=" + nombre + ", Edad=" + edad + "]";
+    public void buscarPelota() {
+        System.out.println(getNombre() + " fue a buscar la pelota.");
     }
+
+    @Override
+    public String toString() {
+        return "Perro[ " + super.toString() + ", Raza=" + raza + "]";
+    }
+    
 }
