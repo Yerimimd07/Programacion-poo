@@ -25,7 +25,6 @@ public class ReservaHotel {
         this.fechaSalida = fechaEntrada;
         this.numeroHabitacion = numeroHabitacion;
         this.reservada = true;
-
     }
 
     // METODOS
