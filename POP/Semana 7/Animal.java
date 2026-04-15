@@ -35,6 +35,6 @@ public class Animal {
 
     @Override
     public String toString() {
-        return "Animal[ nombre=" + nombre + ", Edad=" + edad + "]";
+        return "Animal[ nombre= " + nombre + ", Edad= " + edad + "]";
     }
 }
