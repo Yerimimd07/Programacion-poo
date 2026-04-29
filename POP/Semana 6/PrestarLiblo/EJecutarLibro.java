@@ -16,4 +16,3 @@ public class EJecutarLibro {
         System.out.println("Disponible: " + (libro2.estaDisponible() ? "Sí" : "No"));
     }
 }
-        
