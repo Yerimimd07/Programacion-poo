@@ -17,10 +17,9 @@ public class SistemaControl {
             pisos[i] = new Piso(i + 1);
         }
  
-        System.out.println("================================================");
         System.out.println("   SISTEMA DE CONTROL DE ASCENSOR INICIADO");
         System.out.println("   Total de pisos: " + totalPisos);
-        System.out.println("================================================\n");
+      
     }
  
     // -------------------------------------------------------
@@ -37,7 +36,7 @@ public class SistemaControl {
             return;
         }
         BotonPiso boton = pisos[numeroPiso - 1].getBoton();
-        boton.presionar();          // Polimorfismo: BotonPiso sobreescribe Boton
+        boton.presionar();          // BotonPiso sobreescribe Boton
         registrarSolicitud(numeroPiso);
     }
  
