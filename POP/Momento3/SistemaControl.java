@@ -19,16 +19,16 @@ public class SistemaControl {
  
         System.out.println("   SISTEMA DE CONTROL DE ASCENSOR INICIADO");
         System.out.println("   Total de pisos: " + totalPisos);
-      
+
     }
  
     // -------------------------------------------------------
-    //  BOTONES - Polimorfismo en acción
+    //  BOTONES 
     // -------------------------------------------------------
  
     /**
      * Presiona el botón externo de un piso (llama al ascensor).
-     * Polimorfismo: se invoca BotonPiso.presionar() que sobreescribe Boton.presionar().
+     * Se invoca BotonPiso.presionar() que sobreescribe Boton.presionar().
      */
     public void presionarBotonPiso(int numeroPiso) {
         if (numeroPiso < 1 || numeroPiso > pisos.length) {
@@ -42,7 +42,7 @@ public class SistemaControl {
  
     /**
      * Presiona un botón interno del ascensor (selecciona destino).
-     * Polimorfismo: se invoca BotonAscensor.presionar() que sobreescribe Boton.presionar().
+     * Se invoca BotonAscensor.presionar() que sobreescribe Boton.presionar().
      */
     public void presionarBotonAscensor(int pisoDestino) {
         if (pisoDestino < 1 || pisoDestino > ascensor.getBotones().length) {
@@ -50,7 +50,7 @@ public class SistemaControl {
             return;
         }
         BotonAscensor boton = ascensor.getBotones()[pisoDestino - 1];
-        boton.presionar();          // Polimorfismo: BotonAscensor sobreescribe Boton
+        boton.presionar();          // BotonAscensor sobreescribe Boton
         registrarSolicitud(pisoDestino);
     }
  
@@ -137,12 +137,12 @@ public class SistemaControl {
     }
  
     // -------------------------------------------------------
-    //  PUERTAS - Polimorfismo en acción
+    //  PUERTAS 
     // -------------------------------------------------------
  
     /**
      * Abre la puerta del ascensor y la del piso.
-     * Polimorfismo: PuertaAscensor.abrir() y PuertaPiso.abrir()
+     * PuertaAscensor.abrir() y PuertaPiso.abrir()
      * sobreescriben Puerta.abrir().
      */
     private void abrirPuertas(int numeroPiso) {
